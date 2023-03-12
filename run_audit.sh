@@ -195,7 +195,7 @@ $AUDIT_BIN -g $audit_content_dir/$AUDIT_FILE --vars $varfile_path  --vars-inline
 
 # create screen output
 if [ `grep -c $BENCHMARK $audit_out` != 0 ] || [ $format = junit ] || [ $format = tap ]; then
-echo " '$output_summary'
+echo " `$output_summary`
 Completed file can be found at $audit_out"
 echo "###############"
 echo "Audit Completed"
